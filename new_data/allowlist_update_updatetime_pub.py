@@ -1,0 +1,2 @@
+def update_updatetime_pub(self, data, db_host, db_port, db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, updatetime):
+    self.DB.update_updatetime_pub(data, db_host, db_port, db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, updatetime)

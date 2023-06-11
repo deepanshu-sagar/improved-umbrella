@@ -1,0 +1,2 @@
+def validate_plat_upload(self, data, fraud_db_host, fraud_db_port, fraud_db_user_name, fraud_db_password, crawl_db_host, crawl_db_port, crawl_db_user_name, crawl_db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, version=1):
+    self.DB.validate_plat_upload(data, fraud_db_host, int(fraud_db_port), fraud_db_user_name, fraud_db_password, crawl_db_host, int(crawl_db_port), crawl_db_user_name, crawl_db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, version)

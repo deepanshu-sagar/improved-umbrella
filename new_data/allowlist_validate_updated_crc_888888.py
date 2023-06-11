@@ -1,0 +1,2 @@
+def validate_updated_crc_888888(self, data, db_host, Bulk_db, Komli_db, db_port, db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, user):
+    self.DB.validate_updated_crc_888888(data, db_host, Bulk_db, Komli_db, int(db_port), db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, user)

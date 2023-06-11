@@ -1,0 +1,2 @@
+def update_updatetime_pub_site(self, data, db_host, Bulk_db, Komli_db, db_port, db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, user, updatetime):
+    self.DB.update_updatetime_pub_site(data, db_host, Bulk_db, Komli_db, int(db_port), db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, user, updatetime)

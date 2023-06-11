@@ -1,0 +1,2 @@
+def insert_app_details(self, test_data, hawkeye_db_server, hawkeye_db_port, hawkeye_db_user, hawkeye_db_password):
+    self.DB.insert_app_details(test_data, hawkeye_db_server, hawkeye_db_port, hawkeye_db_user, hawkeye_db_password)

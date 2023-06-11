@@ -1,0 +1,2 @@
+def validate_admin_pub_upload_deleted(self, data, fraud_db_server, fraud_db_port, fraud_db_user, fraud_db_password, crawl_db_server, crawl_db_port, crawl_db_user, crawl_db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, oo=-1):
+    self.DB.validate_admin_pub_upload_deleted(data, fraud_db_server, fraud_db_port, fraud_db_user, fraud_db_password, crawl_db_server, crawl_db_port, crawl_db_user, crawl_db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port, oo)

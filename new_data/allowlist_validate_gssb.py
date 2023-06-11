@@ -1,0 +1,2 @@
+def validate_gssb(self, data, db_host, db_port, db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port):
+    self.DB.validate_gssb(data, db_host, int(db_port), db_user_name, db_password, hawkeye_db_user, hawkeye_db_password, hawkeye_db_host, hawkeye_port)

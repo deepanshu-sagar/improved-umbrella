@@ -1,0 +1,10 @@
+def validate_plat_upload_bulk_upload_table(self, fileName, db_host, db_user_name, db_password, db_port):
+    df_db = self.DB.get_BulkOps_db_data(fileName, db_host, db_user_name, db_password, int(db_port))
+    df_ui = self.acc7.pmccTable('//iq-bulk-upload-allowlist-domain//table', None, None, True)
+    df_ui = df_ui.drop(['User'], axis=1)
+    df_ui = df_ui.drop([''], axis=1)
+    df_ui = df_ui.drop(['Upload Date'], axis=1)
+    BuiltIn().log('DB DATAFRAME')
+    BuiltIn().log('UI DATAFRAME')
+    BuiltIn().log(df_ui)
+    self.search_in_df_bulk(df_ui, df_db)
