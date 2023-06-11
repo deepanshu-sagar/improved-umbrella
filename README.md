@@ -1,7 +1,22 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+Description
+This Python script is designed to split a large Python file into separate files based on its classes and functions. After splitting, it executes a specific command on each of these files. Then, it recombines these into a new Python file while maintaining the original order of functions.
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+Usage
+The script uses the following constants:
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+BIG_FILE_PATH: The path to the large Python file that needs to be split.
+NEW_DIR: The directory where the new split files will be stored.
+CMD: The command to be executed on each split file.
+OUTFILE: The output file where the results of the command execution are stored.
+How it Works
+The script first checks if the input file exists. If not, it raises a FileNotFoundError.
+It then creates the directory where the new files will be stored.
+The script parses the big Python file and maintains an ordered list of new file paths.
+It separates classes and functions, and writes them to individual files.
+The script then runs the command on the new Python file.
+Finally, it combines all the small Python files into a new Python file.
+Requirements
+Python 3.6+
+ast and subprocess Python libraries
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
